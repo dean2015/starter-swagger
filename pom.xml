@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.devcenter.framework</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <groupId>cn.devcenter.framework</groupId>
+    <artifactId>starter-swagger</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <modules>
+        <module>swagger</module>
+    </modules>
+
+    <properties>
+        <swagger.version>2.6.1</swagger.version>
+    </properties>
+
+    <developers>
+        <developer>
+            <name>Gao Song</name>
+            <email>zhgmu@sina.com</email>
+        </developer>
+    </developers>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cn.devcenter.framework</groupId>
+                <artifactId>web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>dlfc-release</id>
+            <name>dlfc release Respoitories</name>
+            <url>http://10.32.156.187:9091/nexus/content/repositories/dlfc-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>dlfc-snapshots</id>
+            <name>dlfc snapshots repo</name>
+            <url>http://10.32.156.187:9091/nexus/content/repositories/dlfc-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
