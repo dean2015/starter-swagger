@@ -19,7 +19,7 @@ public class SwaggerProperties {
 
     private String homepage = "";
 
-    private String email = "gaosong@housecenter.cn";
+    private String email = "";
 
     private String title = "研发中心API接口";
 

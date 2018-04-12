@@ -31,7 +31,7 @@
         <dependencies>
             <dependency>
                 <groupId>cn.devcenter.framework</groupId>
-                <artifactId>web</artifactId>
+                <artifactId>swagger</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
